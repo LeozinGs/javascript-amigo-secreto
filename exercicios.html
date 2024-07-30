@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./_reset.css">
+    <link rel="stylesheet" href="./exercicios.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header" id="header">
+
+        <nav class="opcoes">
+            <a href="#1" class="opcoes__item">Exercício 1</a>
+            <a href="#2" class="opcoes__item">Exercício 2</a>
+            <a href="#3" class="opcoes__item">Exercício 3</a>
+            <a href="#4" class="opcoes__item">Exercício 4</a>
+            <a href="#5" class="opcoes__item">Exercício 5</a>
+            <a href="#6" class="opcoes__item">Exercício 6</a>
+            <a href="#7" class="opcoes__item">Exercício 7</a>
+        </nav>
+
+    </header>
+
+    <main class="main__wrapper">
+
+        <h1 class="titulo">Exercícios</h1>
+
+        <hr>
+
+        <span class="ancora" id="1"></span>
+
+        <section class="exercicio exercicio1" id="exercicio-1">
+
+            <h2 class="titulo__exercicio">1- Crie uma função que valide se um número é positivo, negativo ou zero.</h2>
+
+            <div class="exercicio__box">
+
+                <p class="exercicio__texto">Digite abaixo qualquer número para ser verificado</p>
+                <input type="number" class="campo" placeholder="Digite aqui o número">
+                <button class="exercicio__botao" onclick="verificarPositivoNegativo()">Verificar</button>
+
+                <p class="exercicio__texto resposta">O número digitado é: </p>
+
+            </div>
+
+        </section>
+
+        <hr>
+
+        <span class="ancora" id="2"></span>
+
+        <section class="exercicio exercicio2" id="exercicio-2">
+
+            <h2 class="titulo__exercicio">2- Implemente uma função que verifique se uma pessoa é maior de idade.</h2>
+
+            <div class="exercicio__box">
+
+                <p class="exercicio__texto">Digite seu nome e sua idade abaixo:</p>
+
+                <input type="text" class="campo campo1" placeholder="Digite seu nome">
+                <input type="number" class="campo campo2" placeholder="Digite sua idade"> 
+                <br>
+                <br>
+                <button class="exercicio__botao soma" onclick="verificarMaiorIdade()">Verificar</button>
+
+                <p class="exercicio__texto resposta">/\ Clique em verificar.</p>
+
+            </div>
+
+        </section>
+
+        <hr>
+
+        <span class="ancora" id="3"></span>
+
+        <section class="exercicio exercicio3" id="exercicio-3">
+
+            <h2 class="titulo__exercicio">3- Desenvolva uma função que valide se uma string é vazia ou não.</h2>
+
+            <div class="exercicio__box">
+
+                <p class="exercicio__texto">Digite uma palavra, frase ou nada para verificar se a string é vazia ou não:</p>
+
+                <input type="text" class="campo" placeholder="Digite algo ou deixe vazio">
+                <button class="exercicio__botao" onclick="verificarString()">Verificar</button>
+
+                <p class="exercicio__texto resposta">A string está: </p>
+
+            </div>
+
+        </section>
+
+        <hr>
+
+        <span class="ancora" id="4"></span>
+
+        <section class="exercicio exercicio4" id="exercicio-4">
+
+            <h2 class="titulo__exercicio">4- Crie uma função que determine se um ano é bissexto.</h2>
+
+            <div class="exercicio__box">
+
+                <p class="exercicio__texto">Digite um "ano":</p>
+
+                <input type="number" class="campo" placeholder="Digite um ano">
+                <br>
+                <br>
+                <button class="exercicio__botao" onclick="verificarAnoBissexto()">Verificar</button>
+
+                <p class="exercicio__texto resposta">O ano é: </p>
+
+            </div>
+
+        </section>
+        
+        <hr>
+
+        <span class="ancora" id="5"></span>
+
+        <section class="exercicio exercicio4" id="exercicio-5">
+
+            <h2 class="titulo__exercicio">5- Implemente uma função que calcule a média de dois números, interrompendo a execução se algum dos números não for válido.</h2>
+
+            <div class="exercicio__box">
+
+                <p class="exercicio__texto">Digite 2 números:</p>
+
+                <input type="number" class="campo campo1" placeholder="Digite o 1º número">
+                <input type="number" class="campo campo2" placeholder="Digite o 2º número">
+                <br>
+                <br>
+                <button class="exercicio__botao" onclick="calcularMedia()">Calcular</button>
+
+                <p class="exercicio__texto resposta">A média dos números é: </p>
+
+            </div>
+
+        </section>
+        
+        <hr>
+
+        <span class="ancora" id="6"></span>
+
+        <section class="exercicio exercicio4" id="exercicio-6">
+
+            <h2 class="titulo__exercicio">6- Desenvolva uma função que receba um array como parâmetro e retorne o seu tamanho.</h2>
+
+            <div class="exercicio__box">
+
+                <p class="exercicio__texto">Adicione coisas à lista:</p>
+
+                <input type="text" class="campo" placeholder="Digite algo">
+                <button class="exercicio__botao" onclick="adicionar()">Adicionar</button>              
+                <button class="exercicio__botao" onclick="resetar()">Resetar</button>              
+
+                <p class="exercicio__texto resposta">O tamanho da array é de: 0 Itens</p>
+
+            </div>
+
+        </section>
+        
+        <hr>
+
+        <span class="ancora" id="7"></span>
+
+        <section class="exercicio exercicio4" id="exercicio-7">
+
+            <h2 class="titulo__exercicio">7- Crie um array e utilize a função includes para verificar se um elemento específico está presente.</h2>
+
+            <div class="exercicio__box">
+
+                <p class="exercicio__texto">Digite algo da lista e clique no botão para ver se o item está presente.</p>
+
+                <p class="exercicio__texto">Lista: [pão, leite, queijo, presunto, achocolatado, manteiga, biscoito recheado].</p>
+                <input type="text" class="campo" placeholder="Digite algo da lista ou não">
+                <button class="exercicio__botao" onclick="verificarPresente()">Verificar</button>            
+
+                <p class="exercicio__texto resposta">O item digitado: </p>
+
+            </div>
+
+        </section>
+        
+        <hr>
+
+    </main>
+
+
+    <script src="./js/exercicios.js"></script>
+</body>
+
+</html>

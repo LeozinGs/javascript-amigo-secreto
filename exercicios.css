@@ -1,0 +1,85 @@
+* {
+    scroll-behavior: smooth;
+}
+
+hr {
+    width: 100%;
+}
+
+body {
+    font-family: "Inter";
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+    padding-top: 70px;
+}
+
+.header {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    height: 70px;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+    text-align: center;
+}
+
+.opcoes {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcoes__item {
+    padding: 1em;
+    text-decoration: none;
+    color: #f0f0f0;
+    scroll-behavior: smooth;
+}
+
+.opcoes__item:hover {
+    background: #4f4f4f;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.main__wrapper {
+    display: grid;
+    grid-template-columns: 1fr min(65ch, 100%) 1fr;
+}
+
+.main__wrapper>* {
+    grid-column: 2;
+}
+
+.titulo {
+    text-align: center;
+    padding: 2em;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.titulo__exercicio {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 1em;
+}
+
+.exercicio__box {
+    padding: 1em;
+}
+
+.exercicio__texto {
+    padding: 1em 0;
+
+}
+
+.ancora {
+    display: block;
+    height: 63px;
+    margin-top: -63px;
+    visibility: hidden;
+}
